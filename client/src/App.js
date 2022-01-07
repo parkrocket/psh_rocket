@@ -6,7 +6,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>박로켓님의 첫 헤로쿠 서버 입니다 :)</p>
+        <p>
+          박로켓님의 첫 헤로쿠 서버 입니다 :)
+          <br /> github 등록시 자동 빌드 되는지 확인중이에요.
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
