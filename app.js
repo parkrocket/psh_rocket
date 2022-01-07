@@ -16,7 +16,8 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // 3000 포트로 서버 오픈
-app.listen(8080, function () {
+
+app.listen(process.env.PORT || 8080, function () {
   console.log("start! express server on port 8080");
 });
 
