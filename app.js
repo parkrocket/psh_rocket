@@ -16,8 +16,8 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // 3000 포트로 서버 오픈
-app.listen(5000, function () {
-  console.log("start! express server on port 5000");
+app.listen(8080, function () {
+  console.log("start! express server on port 8080");
 });
 
 // 이제 터미널에 node app.js 를 입력해보자.
