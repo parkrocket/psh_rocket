@@ -1,0 +1,22 @@
+{
+  "name": "psh_rocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+   "engine": {
+    "node": "16.13.0",
+    "npm": "8.3.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "backend": "nodemon app.js",
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run chat\" \"npm run start --prefix client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
